@@ -16,7 +16,9 @@ Click here to view my excel file: [Kickstarter_Challenge](https://github.com/rma
 - After renaming the StarterBook to Kickstarter_Challenge, added a column to the worksheet to extract the year from the “Date Created Conversion” column. This was done by using YEAR() function. 
 - Then a pivot table was created in a new the sheet "Theater Outcomes by Launch Date". 
 - Grouped the Row Labels column to show the months of the year. 
-- Filtered the "Parent Category" to show only the data for "theater". 
+- Filtered the "Parent Category" to show only the data for "theater".
+
+![screenshot1](https://github.com/rmat112/kickstarter-analysis/blob/main/resources/screenshot1.png)
 - Created a line chart from the pivot table to visualize the relationship between outcomes and launch month. 
 - This indicates that most successful campaigns were launched in the months of May and June. Also, the least successful or failed campaigns were launched between October and December.
 
@@ -25,7 +27,12 @@ Click here to view my excel file: [Kickstarter_Challenge](https://github.com/rma
 ### Analysis of Outcomes Based on Goals
 - Here I created a new sheet "Outcomes Based on Goals." 
 - Used COUNTIFS() function to populate this sheet with "Number Successful," "Number Failed," and "Number Canceled" columns by filtering on the Kickstarter "outcome" column, on the "goal" amount column using the ranges created in Step 3, and on the "Subcategory" column using "plays" as the criteria.
+
+![Func_Countifs](https://github.com/rmat112/kickstarter-analysis/blob/main/resources/Func_Countifs.png)
+
 - The SUM() function was utilized to calculate the "Total Projects" column.Then I calculated the percentages of successful, failed, and canceled projects based on the data from the "Total Projects," "Number Successful," "Number Failed," and "Number Canceled" columns. 
+
+![screenshot3](https://github.com/rmat112/kickstarter-analysis/blob/main/resources/screenshot3.png)
 - Created a line chart for percentage of successful or failed projects.
 - The chart shows an overall trend of decreasing number of successful campaigns with increasing goal amount. 
 
