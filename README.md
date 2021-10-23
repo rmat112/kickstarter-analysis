@@ -2,9 +2,9 @@
 Performing analysis on Kickstarter data to uncover trends.
 
 ## Overview of Project
-Louise’s play Fever came close to its fundraising goal in a short amount of time. Now, she wants to know how different campaigns fared in relation to their launch dates and their funding goals. 
+Louise’s play Fever came close to its fundraising goal in a short amount of time. She wants to know how different campaigns fared in relation to their launch dates and their funding goals. 
 ### Purpose
-The purpose of this analysis was to use the Kickstarter data and visualize campaign outcomes based on their launch dates and their funding goals.
+The purpose of this analysis is to use the Kickstarter data and visualize campaign outcomes based on their launch dates and their funding goals.
 ## Analysis and Challenges
 I conducted the following two types of analyses:
 1. I analyzed campaign outcomes based on launch date. The campaign outcomes varied from "successful" to "failed" to "canceled".
@@ -19,7 +19,8 @@ Click here to view my excel file: [Kickstarter_Challenge](https://github.com/rma
 - Filtered the "Parent Category" to show only the data for "theater". 
 - Created a line chart from the pivot table to visualize the relationship between outcomes and launch month. 
 - This indicates that most successful campaigns were launched in the months of May and June. Also, the least successful or failed campaigns were launched between October and December.
-         ![Theatr_Outcomes_vs_Launch](https://github.com/rmat112/kickstarter-analysis/blob/main/resources/Theatr_Outcomes_vs_Launch.png)
+
+ ![Theatr_Outcomes_vs_Launch](https://github.com/rmat112/kickstarter-analysis/blob/main/resources/Theatr_Outcomes_vs_Launch.png)
 
 ### Analysis of Outcomes Based on Goals
 - Here I created a new sheet "Outcomes Based on Goals." 
@@ -27,6 +28,7 @@ Click here to view my excel file: [Kickstarter_Challenge](https://github.com/rma
 - The SUM() function was utilized to calculate the "Total Projects" column.Then I calculated the percentages of successful, failed, and canceled projects based on the data from the "Total Projects," "Number Successful," "Number Failed," and "Number Canceled" columns. 
 - Created a line chart for percentage of successful or failed projects.
 - The chart shows an overall trend of decreasing number of successful campaigns with increasing goal amount. 
+
     ![Outcomes_vs_Goals](https://github.com/rmat112/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png)
     
 ### Challenges and Difficulties Encountered
@@ -50,4 +52,5 @@ The only challenge I faced was during the application of COUNTIFS() function. Du
 - What are some other possible tables and/or graphs that we could create?
   - When analyzing the outcomes based on goals, plotting %successful and %failed on the same chart is not required because these two curves provide the same information (the sum of %successful and %failed is 100%). A chart with total number of successful campaigns would be more useful than % successful so that we can get a complete and correct picture. 
   - Analysis of failed campaigns can also be a useful tool to understand why and when some campaigns failed. I sorted the kickstarter data by "failed" outcome in "theater" category. Then I created a pivot table by "date of conversion" grouped by months and plotted against average donation and goal amount. I noticed that in May/June (when most campaigns were successful) even the failed campaigns got more average donation than their goal, but failed campaigns drastically fell short on funds during the months of December and April.
+ 
   ![Launch_vs_goal_avg-donation](https://github.com/rmat112/kickstarter-analysis/blob/main/resources/Launch_vs_goal_avg-donation.png)
